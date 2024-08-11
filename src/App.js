@@ -3,6 +3,7 @@ import './App.css';
 import Header from './MyComponebts/Header.js'
 import Footer from './MyComponebts/Footer.js';
 import Todos from './MyComponebts/Todos.js';
+import AddTodo from './MyComponebts/AddTodo.js';
 import React , { useState } from 'react';
 
 function App() {
@@ -37,9 +38,11 @@ const onDelete = (todo) =>{
   return (
     <>
     <Header title="MyTodoList"  />
-    <Footer/>
+    <AddTodo/>
     
     <Todos  todos={todos} onDelete={onDelete}/>
+    
+    <Footer/>
     </>
     
   );
